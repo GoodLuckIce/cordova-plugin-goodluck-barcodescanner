@@ -1,0 +1,39 @@
+{
+  "name": "cordova-plugin-goodluck-barcodescanner",
+  "version": "1.0.1",
+  "description": "You can use the BarcodeScanner plugin",
+  "cordova": {
+    "id": "cordova-plugin-goodluck-barcodescanner",
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GoodLuckIce/cordova-plugin-goodluck-barcodescanner.git"
+  },
+  "keywords": [
+    "cordova:plugin.barcodescanner"
+  ],
+  "engines": {
+    "cordovaDependencies": {
+      "7.0.0": {
+        "cordova-android": ">=6.3.0"
+      }
+    }
+  },
+  "author": "Adobe Cordova Team",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/GoodLuckIce/cordova-plugin-goodluck-barcodescanner/issues"
+  },
+  "homepage": "https://github.com/GoodLuckIce/cordova-plugin-goodluck-barcodescanner#readme",
+  "scripts": {
+    "test": "jasmine-node --color spec"
+  },
+  "devDependencies": {
+    "jasmine-node": "1.14.5",
+    "pluginpub": "^0.0.9"
+  }
+}
