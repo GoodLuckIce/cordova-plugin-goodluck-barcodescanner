@@ -33,10 +33,10 @@
     <framework src="AudioToolbox.framework"/>
   </platform>
   <platform name="android">
-    <source-file src="src/android/BarcodeScanner.java" target-dir="src/barcodescanner"/>
+    <source-file src="src/android/BarcodeScanner.java" target-dir="src/goodluck.barcodescanner"/>
     <config-file target="res/xml/config.xml" parent="/*">
       <feature name="BarcodeScanner">
-        <param name="android-package" value="com.BarcodeScanner"/>
+        <param name="android-package" value="goodluck.BarcodeScanner"/>
       </feature>
     </config-file>
     <config-file target="AndroidManifest.xml" parent="/manifest/application">
