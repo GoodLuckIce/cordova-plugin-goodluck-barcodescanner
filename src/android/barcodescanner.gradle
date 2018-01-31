@@ -7,7 +7,10 @@ repositories{
 
 dependencies {
     compile 'com.android.support:support-v4:+'
-    compile(name:'zxing-3.3.1', ext:'aar')
+  implementation 'com.android.support:appcompat-v7:26.1.0'
+  implementation 'com.google.zxing:core:3.3.1'
+  implementation 'com.journeyapps:zxing-android-embedded:3.5.0'
+  compile(name:'com.goodluck.barcodescanner', ext:'aar')
 }
 
 android {

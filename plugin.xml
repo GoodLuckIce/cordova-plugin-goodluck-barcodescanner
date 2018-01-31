@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:rim="http://www.blackberry.com/ns/widgets" id="cordova-plugin-goodluck-barcodescanner" version="7.0.2">
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:rim="http://www.blackberry.com/ns/widgets" id="cordova-plugin-goodluck-barcodescanner" version="7.0.2">
   <name>BarcodeScanner</name>
-  <description>You can use the BarcodeScanner plugin to scan different types of barcodes (using the device's camera) and get the metadata encoded in them for processing within your application.</description>
+  <description>You can use the BarcodeScanner plugin to scan different types of barcodes (using the device's camera) and
+    get the metadata encoded in them for processing within your application.
+  </description>
   <license>MIT</license>
   <repo>https://github.com/HybridApp/cordova-plugin-goodluck-barcodescanner</repo>
   <issue>https://github.com/HybridApp/cordova-plugin-goodluck-barcodescanner/issues</issue>
@@ -40,13 +43,18 @@
       </feature>
     </config-file>
     <config-file target="AndroidManifest.xml" parent="/manifest/application">
-      <activity android:name="com.google.zxing.client.android.CaptureActivity" android:clearTaskOnLaunch="true" android:configChanges="orientation|keyboardHidden|screenSize" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:windowSoftInputMode="stateAlwaysHidden" android:exported="false"/>
+      <activity android:name="com.google.zxing.client.android.CaptureActivity" android:clearTaskOnLaunch="true"
+                android:configChanges="orientation|keyboardHidden|screenSize"
+                android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+                android:windowSoftInputMode="stateAlwaysHidden" android:exported="false"
+                android:screenOrientation="portrait"/>
       <activity android:name="com.google.zxing.client.android.encode.EncodeActivity" android:label="Share"/>
     </config-file>
     <config-file target="AndroidManifest.xml" parent="/manifest">
       <uses-permission android:name="android.permission.CAMERA"/>
       <uses-permission android:name="android.permission.FLASHLIGHT"/>
       <uses-feature android:name="android.hardware.camera" android:required="true"/>
+      <uses-feature android:name="android.hardware.autofocus"/>
 
       <uses-permission android:name="android.permission.INTERNET"/>
       <uses-permission android:name="android.permission.VIBRATE"/>
@@ -59,6 +67,6 @@
 
     </config-file>
     <framework src="src/android/barcodescanner.gradle" custom="true" type="gradleReference"/>
-    <lib-file src="src/android/zxing-3.3.1.aar"/>
+    <lib-file src="src/android/com.goodluck.barcodescanner.aar"/>
   </platform>
 </plugin>
